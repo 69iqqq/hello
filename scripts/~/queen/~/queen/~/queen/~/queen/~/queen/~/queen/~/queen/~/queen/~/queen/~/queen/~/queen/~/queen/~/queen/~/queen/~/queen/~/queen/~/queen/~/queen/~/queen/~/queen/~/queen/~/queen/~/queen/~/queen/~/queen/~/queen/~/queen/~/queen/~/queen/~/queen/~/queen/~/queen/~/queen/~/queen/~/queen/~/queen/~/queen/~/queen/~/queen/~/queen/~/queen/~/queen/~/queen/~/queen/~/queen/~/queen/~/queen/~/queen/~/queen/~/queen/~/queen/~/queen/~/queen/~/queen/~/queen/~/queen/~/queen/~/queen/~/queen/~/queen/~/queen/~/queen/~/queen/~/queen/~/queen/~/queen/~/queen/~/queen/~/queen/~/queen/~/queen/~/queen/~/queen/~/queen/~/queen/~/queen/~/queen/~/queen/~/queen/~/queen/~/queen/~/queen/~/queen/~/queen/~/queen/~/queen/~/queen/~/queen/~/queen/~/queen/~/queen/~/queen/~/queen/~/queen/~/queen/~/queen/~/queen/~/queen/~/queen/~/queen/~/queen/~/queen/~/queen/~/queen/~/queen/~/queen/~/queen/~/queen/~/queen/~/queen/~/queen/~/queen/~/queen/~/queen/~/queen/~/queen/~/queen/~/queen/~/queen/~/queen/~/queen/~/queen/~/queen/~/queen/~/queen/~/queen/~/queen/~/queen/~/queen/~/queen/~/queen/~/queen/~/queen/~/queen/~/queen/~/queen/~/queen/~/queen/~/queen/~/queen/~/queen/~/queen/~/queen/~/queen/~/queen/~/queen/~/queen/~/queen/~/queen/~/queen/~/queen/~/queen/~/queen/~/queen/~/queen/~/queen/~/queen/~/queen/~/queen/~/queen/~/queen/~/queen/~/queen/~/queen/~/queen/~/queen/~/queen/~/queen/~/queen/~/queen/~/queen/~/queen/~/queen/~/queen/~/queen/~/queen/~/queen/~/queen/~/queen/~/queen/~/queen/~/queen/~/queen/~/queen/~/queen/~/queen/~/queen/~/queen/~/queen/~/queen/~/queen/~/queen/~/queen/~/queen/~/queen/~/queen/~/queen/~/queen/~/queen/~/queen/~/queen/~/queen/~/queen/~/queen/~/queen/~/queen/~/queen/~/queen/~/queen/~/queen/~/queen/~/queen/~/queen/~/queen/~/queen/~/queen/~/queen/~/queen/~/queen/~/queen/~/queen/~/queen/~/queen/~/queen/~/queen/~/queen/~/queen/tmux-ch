@@ -1,0 +1,98 @@
+#!/bin/bash
+
+# Function for the first operation
+operation_one() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux.sola ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  echo "Operation 1 executed successfully!"
+}
+
+# Function for the second operation
+operation_two() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux-cat ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  rm -rf ~/.config/OwnVim/lua/plugins/colorscheme-sh.lua
+  cp -r ~/queen/nvim-colors/catppuccin-mocha.lua ~/.config/OwnVim/lua/plugins/colorscheme-sh.lua
+  rm -r ~/.config/starship.toml
+  cp -r ~/queen/prompts/starship-catppuccin-mocha.toml ~/.config/starship.toml
+  echo "Operation 2 executed successfully!"
+}
+
+# Function for the third operation
+operation_three() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux-tokyo1 ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  echo "Operation 3 executed successfully!"
+}
+
+# Function for the fourth operation
+operation_four() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux-tokyo2 ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  echo "Operation 4 executed successfully!"
+}
+
+# Function for the fifth operation
+operation_five() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux-latte ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  echo "Operation 5 executed successfully!"
+}
+
+# Function for the sixth operation
+operation_six() {
+  rm -rf ~/.config/tmux
+  cp -r ~/queen/tmux-eldritch ~/.config/tmux
+  tmux source ~/.config/tmux/tmux.conf
+  rm -rf ~/.config/OwnVim/lua/plugins/colorscheme-sh.lua
+  cp -r ~/queen/nvim-colors/eldritch-color.lua ~/.config/OwnVim/lua/plugins/colorscheme-sh.lua
+  rm -r ~/.config/starship.toml
+  cp -r ~/queen/prompts/starship-eldritch.toml ~/.config/starship.toml
+  # rm -rf ~/.config/OwnVim/lua/plugins/lualine.lua
+  # cp -r ~/queen/statusline/lualine.lua ~/.config/OwnVim/lua/plugins/lualine.lua
+
+  echo "Operation 6 executed successfully!"
+}
+
+# Menu options
+options=(
+  "Operation 1: Use Solarized"
+  "Operation 2: Use Catppuccin-rounded"
+  "Operation 3: Use Tokyo-night-arrowed"
+  "Operation 4: Use Tokyo-night-rectangle"
+  "Operation 5: Use Latte"
+  "Operation 6: Use Eldritch"
+)
+
+# Display menu with a smaller `fzf` window size
+choice=$(printf '%s\n' "${options[@]}" | fzf --prompt="Select an operation: " --height=10 --border)
+
+# Execute the selected operation
+case "$choice" in
+"Operation 1: Use Solarized")
+  operation_one
+  ;;
+"Operation 2: Use Catppuccin-rounded")
+  operation_two
+  ;;
+"Operation 3: Use Tokyo-night-arrowed")
+  operation_three
+  ;;
+"Operation 4: Use Tokyo-night-rectangle")
+  operation_four
+  ;;
+"Operation 5: Use Latte")
+  operation_five
+  ;;
+"Operation 6: Use Eldritch")
+  operation_six
+  ;;
+*)
+  echo "No valid operation selected."
+  ;;
+esac

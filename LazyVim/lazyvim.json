@@ -1,0 +1,12 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.ui.dashboard-nvim"
+  ],
+  "news": {
+    "NEWS.md": "10960",
+    "doc/news.txt": "14042"
+  },
+  "version": 7
+}

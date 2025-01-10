@@ -1,0 +1,8 @@
+# !/bin/bash
+# rm -rf ~/.config/tmux
+# cp -r ~/queen/tmux-tokyo1 ~/.config/tmux
+# tmux source ~/.config/tmux/tmux.conf
+
+rm -rf ~/.config/tmux
+cp -r ~/queen/tmux-tokyo2 ~/.config/tmux
+tmux source ~/.config/tmux/tmux.conf

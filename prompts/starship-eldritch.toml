@@ -1,0 +1,33 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Sets user-defined palette
+palette = "eldritch"
+
+# Starship modules
+[character]
+success_symbol = "[[](eldritch_current_line) ❯](eldritch_orange)"
+error_symbol = "[[](eldritch_error) ❯](eldritch_secondary)"
+vimcmd_symbol = "[ ❮](eldritch_accent)" # For use with zsh-vi-mode
+
+[git_branch]
+style = "bold eldritch_accent"
+
+[directory]
+truncation_length = 4
+style = "bold eldritch_comment"
+
+# Palette definitions
+[palettes.eldritch]
+eldritch_background = "#212337" # Sunken Depths Grey
+eldritch_current_line = "#37f499" # Shallow Depths Grey
+eldritch_foreground = "#ebfafa" # Lighthouse White
+eldritch_comment = "#7081d0" # The Old One Purple
+eldritch_secondary = "#04d1f9" # Watery Tomb Blue
+eldritch_primary = "#04d1f9" # Great Old One Green
+eldritch_orange = "#f7c67f" # Dreaming Orange
+eldritch_pink = "#f265b5" # Pustule Pink
+eldritch_accent = "#a48cf2" # Lovecraft Purple
+eldritch_error = "#f16c75" # R'lyeh' Red
+eldritch_yellow = "#f1fc79" # Gold of Yuggoth
+

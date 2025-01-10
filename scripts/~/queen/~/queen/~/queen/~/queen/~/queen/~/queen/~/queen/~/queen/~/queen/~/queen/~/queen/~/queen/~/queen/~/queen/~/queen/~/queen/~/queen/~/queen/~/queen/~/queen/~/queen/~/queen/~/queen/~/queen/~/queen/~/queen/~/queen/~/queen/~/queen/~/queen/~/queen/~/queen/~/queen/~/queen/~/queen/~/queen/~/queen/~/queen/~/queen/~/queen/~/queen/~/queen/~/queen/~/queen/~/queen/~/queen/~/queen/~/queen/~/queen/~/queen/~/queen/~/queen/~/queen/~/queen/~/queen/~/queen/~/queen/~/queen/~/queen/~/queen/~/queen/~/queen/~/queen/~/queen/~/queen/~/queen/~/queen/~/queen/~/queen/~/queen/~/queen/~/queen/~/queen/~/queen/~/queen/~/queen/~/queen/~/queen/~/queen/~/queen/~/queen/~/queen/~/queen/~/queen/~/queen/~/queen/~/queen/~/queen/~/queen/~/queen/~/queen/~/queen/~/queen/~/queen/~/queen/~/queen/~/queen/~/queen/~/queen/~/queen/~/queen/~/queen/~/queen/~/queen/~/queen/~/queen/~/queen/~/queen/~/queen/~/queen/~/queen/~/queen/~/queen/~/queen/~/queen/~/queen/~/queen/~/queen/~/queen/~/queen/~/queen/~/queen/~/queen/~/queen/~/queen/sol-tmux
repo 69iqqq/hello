@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf ~/.config/tmux
+cp -r ~/queen/tmux.sola ~/.config/tmux
+tmux source ~/.config/tmux/tmux.conf
+
+

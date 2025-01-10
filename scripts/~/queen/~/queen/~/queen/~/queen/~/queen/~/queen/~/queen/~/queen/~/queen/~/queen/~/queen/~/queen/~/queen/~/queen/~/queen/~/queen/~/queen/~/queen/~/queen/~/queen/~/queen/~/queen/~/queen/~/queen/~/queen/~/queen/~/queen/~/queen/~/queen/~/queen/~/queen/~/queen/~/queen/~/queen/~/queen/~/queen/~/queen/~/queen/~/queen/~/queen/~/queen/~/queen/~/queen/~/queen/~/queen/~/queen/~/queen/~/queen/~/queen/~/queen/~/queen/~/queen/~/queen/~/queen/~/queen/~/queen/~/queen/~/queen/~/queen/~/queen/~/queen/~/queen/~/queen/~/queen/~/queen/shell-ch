@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Define shell paths
+FISH_SHELL=$(which fish)
+ZSH_SHELL=$(which zsh)
+
+# Get the current default shell
+CURRENT_SHELL=$(getent passwd $USER | cut -d: -f7)
+
+# Toggle between Fish and Zsh
+if [[ "$CURRENT_SHELL" == "$FISH_SHELL" ]]; then
+    echo "Switching to Zsh..."
+    chsh -s "$ZSH_SHELL"
+    echo "Default shell changed to Zsh. Restart your terminal for changes to take effect."
+elif [[ "$CURRENT_SHELL" == "$ZSH_SHELL" ]]; then
+    echo "Switching to Fish..."
+    chsh -s "$FISH_SHELL"
+    echo "Default shell changed to Fish. Restart your terminal for changes to take effect."
+else
+    echo "Current shell is neither Fish nor Zsh. Setting default to Fish..."
+    chsh -s "$FISH_SHELL"
+    echo "Default shell set to Fish. Restart your terminal for changes to take effect."
+fi
+

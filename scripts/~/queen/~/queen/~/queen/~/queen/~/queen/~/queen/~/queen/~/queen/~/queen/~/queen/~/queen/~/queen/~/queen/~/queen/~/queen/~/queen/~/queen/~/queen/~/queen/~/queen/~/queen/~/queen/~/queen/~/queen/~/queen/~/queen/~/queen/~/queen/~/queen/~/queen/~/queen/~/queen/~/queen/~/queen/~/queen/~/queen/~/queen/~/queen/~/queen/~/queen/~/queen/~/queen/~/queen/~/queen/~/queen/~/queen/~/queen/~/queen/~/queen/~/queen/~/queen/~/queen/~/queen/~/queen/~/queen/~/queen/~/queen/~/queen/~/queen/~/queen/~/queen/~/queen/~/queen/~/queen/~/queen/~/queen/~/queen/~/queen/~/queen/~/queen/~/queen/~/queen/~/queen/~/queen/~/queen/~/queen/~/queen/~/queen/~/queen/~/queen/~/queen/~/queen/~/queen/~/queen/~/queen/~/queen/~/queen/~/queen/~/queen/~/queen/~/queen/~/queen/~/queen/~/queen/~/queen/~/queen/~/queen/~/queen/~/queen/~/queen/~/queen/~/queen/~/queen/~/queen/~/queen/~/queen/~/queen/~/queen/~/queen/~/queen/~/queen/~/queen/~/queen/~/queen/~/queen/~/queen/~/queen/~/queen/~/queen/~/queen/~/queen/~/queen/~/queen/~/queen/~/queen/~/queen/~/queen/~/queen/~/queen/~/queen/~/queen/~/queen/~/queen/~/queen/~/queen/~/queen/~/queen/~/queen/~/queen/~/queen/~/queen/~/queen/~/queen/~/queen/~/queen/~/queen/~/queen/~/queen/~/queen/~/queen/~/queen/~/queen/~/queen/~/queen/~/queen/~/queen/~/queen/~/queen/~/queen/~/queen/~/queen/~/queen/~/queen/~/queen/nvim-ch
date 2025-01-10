@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+
+# Function to apply the selected Neovim configuration
+apply_nvim_config() {
+  local config_file=$1
+  rm -rf ~/.config/nvim/.lua
+  cp -r ~/queen/nvim-colors/$config_file ~/.config/OwnVim/lua/plugins/colorscheme-sh.lua
+  echo "Applied $config_file successfully!"
+}
+
+# Menu options
+options=(
+  "catppuccin-mocha.lua"
+  "tokyo-night.lua"
+  "eldritch-color.lua"
+  "catppuccin-latte.lua"
+)
+
+# Display menu with `fzf` for selection
+choice=$(printf '%s\n' "${options[@]}" | fzf --prompt="Select a Neovim configuration: " --height=10 --border)
+
+# Execute the selected operation
+if [[ -n "$choice" ]]; then
+  apply_nvim_config "$choice"
+else
+  echo "No valid configuration selected."
+fi

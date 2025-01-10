@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+
+# Function to apply the selected starship configuration
+apply_starship_config() {
+  local config_file=$1
+  rm -rf ~/.config/starship.toml
+  cp -r ~/queen/prompts/$config_file ~/.config/starship.toml
+  echo "Applied $config_file successfully!"
+}
+
+# Menu options
+options=(
+  "starship-tokyo.toml"
+  "starship-catppuccin-mocha.toml"
+  "starship-pastel.toml"
+  "starship-space.toml"
+  "starship-bracket.toml"
+  "starship-catppuccin-latte.toml"
+  "starship-eldritch.toml"
+)
+
+# Display menu with `fzf` for selection
+choice=$(printf '%s\n' "${options[@]}" | fzf --prompt="Select a Starship prompt: " --height=10 --border)
+
+# Execute the selected operation
+if [[ -n "$choice" ]]; then
+  apply_starship_config "$choice"
+else
+  echo "No valid configuration selected."
+fi
