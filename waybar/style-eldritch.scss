@@ -1,0 +1,246 @@
+// Eldritch Color Palette Variables
+$eldritch-dark: #181926;
+$eldritch-mid-dark: #212337;
+$eldritch-light: #ebfafa;
+$eldritch-accent: #37f499;
+$eldritch-pink: #ed8796;
+$eldritch-light-purple: #a48cf2;
+$eldritch-green: #a6da95;
+$eldritch-gold: #eed49f;
+$eldritch-blue: #8aadf4;
+$eldritch-grey: #6e738d;
+$eldritch-yellow: #f7c67f;
+$eldritch-dark-grey: #2a2d45;
+$eldritch-muted-grey: #45495D;
+
+// Global Styles
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+// Window and Background Styles
+window#waybar {
+  background-color: rgba(33, 35, 55, 0.9);
+}
+
+#window {
+  margin-left: 5px;
+  margin-top: 1px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+// Custom Launcher and Info Styles
+#custom-launcher {
+  font-size: 18px;
+  color: $eldritch-accent;
+  padding-right: 10px;
+}
+
+#cpu,
+#memory,
+#temperature {
+  font-size: 15px;
+  background: $eldritch-dark-grey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#cpu {
+  color: $eldritch-gold;
+  padding: 0px 10px 0px 12px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#memory {
+  color: $eldritch-green;
+  padding: 0px 10px 0px 0px;
+}
+
+#temperature {
+  color: $eldritch-blue;
+  padding: 0px 12px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+// Window Name and Button Styles
+#custom-window-name {
+  color: $eldritch-light-purple;
+  margin-right: 10px;
+  background-color: $eldritch-mid-dark;
+}
+
+#workspaces button:nth-child(1) label {
+  color: $eldritch-blue;
+  margin: 0px 8px;
+  background-color: $eldritch-mid-dark;
+}
+
+#workspaces button:nth-child(2) label {
+  color: $eldritch-pink;
+  margin: 0px 8px;
+  background-color: $eldritch-mid-dark;
+}
+
+// Box Style
+#box {
+  background-color: #3C3E4E;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 9px;
+  border: 2px solid $eldritch-muted-grey;
+
+}
+
+#box:nth-child(n) {
+  padding-bottom: 6px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+
+#box:nth-child(1) {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+
+}
+
+#battery,
+#pulseaudio,
+#backlight {
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 0 5px;
+}
+
+// Mpris Animation and Style
+#mpris {
+  color: $eldritch-light;
+  animation: blink 3s linear infinite alternate;
+  font-size: 15px;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+@keyframes blink {
+  to {
+    color: $eldritch-dark;
+  }
+}
+
+// Icon and Miscellaneous Styles
+
+
+#custom-pacman-update-icon {
+  color: $eldritch-accent;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+#backlight {
+  color: $eldritch-yellow;
+}
+
+#custom-notification {
+  color: $eldritch-light-purple;
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+#pulseaudio {
+  color: $eldritch-pink;
+}
+
+#custom-right-arr {
+  color: $eldritch-light;
+  background-color: $eldritch-mid-dark;
+}
+
+#network {
+  color: $eldritch-light-purple;
+  margin-right: 10px;
+  // background-color: $eldritch-mid-dark;
+}
+
+#custom-dot {
+  color: $eldritch-grey;
+  padding-right: 10px;
+  background-color: $eldritch-mid-dark;
+}
+
+#custom-dot-alt {
+  color: $eldritch-muted-grey;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#disk {
+  color: $eldritch-light-purple;
+  background-color: $eldritch-mid-dark;
+}
+
+#custom-clock-icon {
+  color: $eldritch-light;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#custom-filler,
+#custom-filler2 {
+  color: $eldritch-grey;
+  padding-left: 0px;
+  padding-right: 9px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#clock {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+#custom-reboot,
+#custom-power,
+#custom-quit {
+  font-size: 16px;
+  margin: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: $eldritch-pink;
+}
+
+#custom-reboot {
+  color: $eldritch-green;
+}
+
+#custom-power {
+  color: $eldritch-yellow;
+}
+
+#custom-quit {
+  color: $eldritch-pink;
+}
+
+#custom-log {
+  font-size: 15px;
+  margin: 1px;
+}
+
+// End of ::-webkit-textfield-decoration-containtch Theme Styles

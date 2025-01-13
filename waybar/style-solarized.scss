@@ -1,0 +1,203 @@
+// Solarized Dark Color Palette Variables
+$solarized-bg: #002b36;
+$solarized-fg: #839496;
+$solarized-accent: #2aa198;
+$solarized-red: #dc322f;
+$solarized-green: #859900;
+$solarized-yellow: #b58900;
+$solarized-blue: #268bd2;
+$solarized-magenta: #d33682;
+$solarized-cyan: #2aa198;
+$solarized-base03: #002b36;
+$solarized-base02: #073642;
+$solarized-base01: #586e75;
+$solarized-base00: #657b83;
+$solarized-base0: #839496;
+$solarized-base1: #93a1a1;
+$solarized-base2: #eee8d5;
+$solarized-base3: #fdf6e3;
+
+// Global Styles
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'JetBrainsMono Nerd Font', monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+// Window and Background Styles
+window#waybar {
+  background-color: rgba(0, 43, 54, 0.9);
+  /* Solarized dark background */
+}
+
+#window {
+  margin-left: 5px;
+  margin-top: 1px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+// Custom Launcher and Info Styles
+#custom-launcher {
+  font-size: 18px;
+  color: $solarized-accent;
+  padding-right: 10px;
+}
+
+#cpu,
+#memory,
+#temperature {
+  font-size: 15px;
+  background: $solarized-base02;
+  /* Background from Solarized palette */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#cpu {
+  color: $solarized-red;
+  padding: 0px 10px 0px 12px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#memory {
+  color: $solarized-green;
+  padding: 0px 10px 0px 0px;
+}
+
+#temperature {
+  color: $solarized-blue;
+  padding: 0px 12px 0px 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+// Window Name and Button Styles
+#custom-window-name {
+  color: $solarized-base0;
+  margin-right: 10px;
+  background-color: $solarized-base02;
+}
+
+#workspaces button:nth-child(1) label {
+  color: $solarized-blue;
+  margin: 0px 8px;
+  background-color: $solarized-base02;
+}
+
+#workspaces button:nth-child(2) label {
+  color: $solarized-magenta;
+  margin: 0px 8px;
+  background-color: $solarized-base02;
+}
+
+// Box Style
+#box {
+  background-color: #3C3E4E;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 2.5px solid $solarized-base01;
+  /* Subtle border from Solarized */
+}
+
+// Mpris Animation and Style
+#mpris {
+  color: $solarized-fg;
+  animation: blink 3s linear infinite alternate;
+  font-size: 15px;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.8);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+@keyframes blink {
+  to {
+    color: $solarized-base03;
+  }
+}
+
+// Icon and Miscellaneous Styles
+#custom-pacman-update-icon,
+#battery,
+#pulseaudio,
+#backlight,
+#custom-notification {
+  font-size: 18px;
+  padding: 0 4px;
+}
+
+#custom-pacman-update-icon {
+  color: $solarized-accent;
+}
+
+#backlight {
+  color: $solarized-yellow;
+}
+
+#custom-notification {
+  color: $solarized-base0;
+}
+
+#pulseaudio {
+  color: $solarized-red;
+}
+
+#custom-right-arr {
+  color: $solarized-fg;
+  background-color: $solarized-base02;
+}
+
+#network {
+  color: $solarized-base0;
+  margin-right: 10px;
+  background-color: $solarized-base02;
+}
+
+#custom-dot {
+  color: $solarized-base01;
+  padding-right: 10px;
+  background-color: $solarized-base02;
+}
+
+#custom-dot-alt {
+  color: $solarized-base00;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#disk {
+  color: $solarized-base0;
+  background-color: $solarized-base02;
+}
+
+#custom-clock-icon {
+  color: $solarized-fg;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#custom-filler,
+#custom-filler2 {
+  color: $solarized-base01;
+  padding-left: 0px;
+  padding-right: 9px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#clock {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: normal;
+}
