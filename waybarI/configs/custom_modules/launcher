@@ -1,0 +1,37 @@
+{
+  "group/log": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 300,
+            "children-class": "launcher",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/log",
+            "custom/power",
+            "custom/quit",
+            "custom/reboot"
+        ]
+    },
+    
+    "custom/quit": {
+        "format": "󪦐",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/reboot": {
+        "format": "󪦕",
+        "tooltip": false,
+        "on-click": "reboot"
+    },
+    "custom/power": {
+        "format": "󪦓",
+        "tooltip": false,
+        "on-click": "shutdown now"
+    },
+    "custom/log": {
+        "format": "󪥴",
+        "on-click": "",
+        "tooltip": false
+    }
+}
