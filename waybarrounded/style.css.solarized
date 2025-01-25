@@ -1,0 +1,102 @@
+/* Define Solarized Osaka colors */
+* {
+  font-size: 13px;
+  font-family: "BlexMono Nerd Font";
+  color: #fdf6e3; /* Solarized Light foreground color */
+}
+
+#waybar {
+  background: transparent;
+  border-radius: 10px;
+}
+
+#workspaces {
+  border-radius: 5px;
+  box-shadow: 0px 0px black;
+}
+
+#custom-icon {
+  font-size: 20px;
+}
+#window,
+#box {
+  background: #002b36; /* Solarized Dark background color */
+  border-radius: 12px;
+  padding: 5px;
+}
+#window {
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* border: 1px solid #001c1f; */
+  background: #002b36; /* Solarized Dark background color */
+}
+
+#workspaces,
+#custom-lizzy,
+#bluetooth,
+#box {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #002b36; /* Solarized Dark background color */
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#network {
+  color: #268bd2; /* Solarized Blue */
+}
+
+#pulseaudio {
+  color: #2aa198; /* Solarized Cyan */
+}
+
+#backlight {
+  color: #b58900; /* Solarized Yellow */
+}
+
+#bluetooth {
+  color: #d33682; /* Solarized Magenta */
+}
+
+#clock {
+  color: #859900; /* Solarized Green */
+}
+
+#workspaces {
+  color: #cb4b16; /* Solarized Orange */
+}
+
+#custom-lizzy {
+  color: #6c71c4; /* Solarized Violet */
+}
+
+#battery {
+  color: #c47fd5; /* Solarized Yellow for battery */
+}
+
+#custom-notification {
+  color: #268bd2; /* Solarized Blue (Notification color) */
+}
+
+#custom-notification #idle_inhibitor {
+  color: #859900; /* Solarized Green for idle inhibitor */
+}
+
+#idle_inhibitor {
+  color: #859900;
+}
+#idle_inhibitor.activated {
+  color: #dc322f; /* Solarized Red when idle inhibitor is activated */
+}
+
+#bluetooth #pulseaudio {
+  color: #586e75; /* Solarized Base1 (slightly darker grey) */
+}
+#custom-log {
+  color: #dc322f; /* Solarized Red when idle inhibitor is activated */
+}
+#custom-wallpaper{
+  color: #b58900;
+}

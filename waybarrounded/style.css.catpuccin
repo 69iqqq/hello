@@ -1,0 +1,102 @@
+/* Define Catppuccin Mocha colors */
+* {
+  font-size: 13px;
+  font-family: "BlexMono Nerd Font";
+  color: #d9e0ee; /* Catppuccin Mocha foreground color */
+}
+
+#waybar {
+  background: transparent;
+  border-radius: 10px;
+}
+
+#workspaces {
+  border-radius: 5px;
+  box-shadow: 0px 0px black;
+}
+
+#custom-icon {
+  font-size: 20px;
+}
+
+#window,
+#box {
+  background: #181825; /* Catppuccin Mocha background color */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#window {
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* border: 5px solid #001c1f; */
+}
+
+#workspaces,
+#custom-lizzy,
+#bluetooth,
+#box {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #181825; /* Catppuccin Mocha background color */
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#network {
+  color: #89b4fa; /* Catppuccin Mocha Blue */
+}
+
+#pulseaudio {
+  color: #89dceb; /* Catppuccin Mocha Cyan */
+}
+
+#backlight {
+  color: #f9e2af; /* Catppuccin Mocha Yellow */
+}
+
+#bluetooth {
+  color: #cba6f7; /* Catppuccin Mocha Magenta */
+}
+
+#clock {
+  color: #a6e3a1; /* Catppuccin Mocha Green */
+}
+
+#workspaces {
+  color: #fab387; /* Catppuccin Mocha Orange */
+}
+
+#custom-lizzy {
+  color: #f5c2e7; /* Catppuccin Mocha Pink */
+}
+
+
+#battery {
+  color: #f38ba8; /* Catppuccin Mocha Red for battery */
+}
+
+#custom-notification {
+  color: #cba6f7; /* Catppuccin Mocha Magenta (Notification color) */
+}
+
+#custom-notification, #idle_inhibitor {
+  color: #f9e2af; /* Catppuccin Mocha Yellow for idle inhibitor */
+}
+
+#idle_inhibitor.activated {
+  color: #a6e3a1; /* Catppuccin Mocha Green when idle inhibitor is activated */
+}
+
+#bluetooth #pulseaudio {
+  color: #585b70; /* Catppuccin Mocha Gray (Base4) */
+}
+#custom-log {
+color: #f38ba8; /* Solarized Red when idle inhibitor is activated */
+}
+#custom-wallpaper{
+  color:#f38ba8
+}
+

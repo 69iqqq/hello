@@ -1,0 +1,66 @@
+* {
+  font-size: 13px;
+  font-family: "BlexMono Nerd Font";
+  color: #dadada;
+}
+#waybar {
+  background: transparent;
+  border-radius: 10px;
+}
+#workspaces {
+  border-radius: 5px;
+  box-shadow: 0px 0px black;
+}
+#custom-icon {
+  font-size: 20px;
+}
+/* #window { */
+/*   background-color: #001a1d; */
+/*   border-radius: 10px; */
+/*   padding: 5px; */
+/* } */
+
+#windowBox,
+#box {
+  background: #001a1d;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#workspaces,
+#custom-lizzy,
+#bluetooth,
+#custom-power,
+#box {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #001a1d;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#network,
+#pulseaudio,
+#backlight,
+#bluetooth,
+#backlight,
+#bluetooth #pulseaudio #idle_inhibitor,
+#clock,
+#workspaces,
+#custom-lizzy,
+#custom-power,
+#battery,
+#custom-notification {
+  border-radius: 5px;
+}
+
+#idle_inhibitor.activated {
+  color: #e57474;
+}
+
+#custom-power {
+  color: #c47fd5;
+  margin-right: 10px;
+  padding-right: 14px;
+}
