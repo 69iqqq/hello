@@ -1,0 +1,24 @@
+# The syntax is "key = value". The whitespace around the
+# equals doesn't matter.
+# background = 282c34
+foreground = ffffff
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+
+# Empty values reset the configuration to the default value
+# font-family = Hack Nerd Font
+font-family = JetBrainsMono Nerd Font
+font-size = 15
+theme = catppuccin-mocha
+# theme = iTerm2 Solarized Dark
+# theme = tokyonight
+confirm-close-surface = false
+# background-opacity = 1
+# background-opacity = 0.98
+# macos-titlebar-style = hidden
+gtk-titlebar = false
+# window-decoration = false
+window-padding-y = 10
+window-padding-x = 10
